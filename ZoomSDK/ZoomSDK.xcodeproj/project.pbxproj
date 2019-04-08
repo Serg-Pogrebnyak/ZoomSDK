@@ -12,6 +12,7 @@
 		0B97F19222577DBE0029F202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B97F19022577DBE0029F202 /* Main.storyboard */; };
 		0B97F19422577DC00029F202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B97F19322577DC00029F202 /* Assets.xcassets */; };
 		0B97F19722577DC00029F202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B97F19522577DC00029F202 /* LaunchScreen.storyboard */; };
+		DD968FEAFD69249DE36483DC /* Pods_ZoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C9B5A885FE7BA3C44A0EB9 /* Pods_ZoomSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		0B97F19322577DC00029F202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B97F19622577DC00029F202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B97F19822577DC00029F202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		269BB1F07EA1A31220B297F6 /* Pods-ZoomSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomSDK.debug.xcconfig"; path = "Target Support Files/Pods-ZoomSDK/Pods-ZoomSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		71A7F84DB65A8604BF8219B5 /* Pods-ZoomSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomSDK.release.xcconfig"; path = "Target Support Files/Pods-ZoomSDK/Pods-ZoomSDK.release.xcconfig"; sourceTree = "<group>"; };
+		79C9B5A885FE7BA3C44A0EB9 /* Pods_ZoomSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZoomSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD968FEAFD69249DE36483DC /* Pods_ZoomSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0B97F18B22577DBE0029F202 /* ZoomSDK */,
 				0B97F18A22577DBE0029F202 /* Products */,
+				E562DE35FD0C77E6D0F19F48 /* Pods */,
+				B428E0A53C02A3EF46B7B76E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = ZoomSDK;
 			sourceTree = "<group>";
 		};
+		B428E0A53C02A3EF46B7B76E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79C9B5A885FE7BA3C44A0EB9 /* Pods_ZoomSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E562DE35FD0C77E6D0F19F48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				269BB1F07EA1A31220B297F6 /* Pods-ZoomSDK.debug.xcconfig */,
+				71A7F84DB65A8604BF8219B5 /* Pods-ZoomSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B97F19B22577DC00029F202 /* Build configuration list for PBXNativeTarget "ZoomSDK" */;
 			buildPhases = (
+				A80BD5BC72E0D9BC33A85241 /* [CP] Check Pods Manifest.lock */,
 				0B97F18522577DBE0029F202 /* Sources */,
 				0B97F18622577DBE0029F202 /* Frameworks */,
 				0B97F18722577DBE0029F202 /* Resources */,
+				C92C695B0412BB106558BD79 /* [CP] Embed Pods Frameworks */,
+				0B0AF7432257835600C90B6C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B0AF7432257835600C90B6C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZoomAuthenticationHybrid.framework/strip-unused-architectures-from-target.sh\"\n";
+		};
+		A80BD5BC72E0D9BC33A85241 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZoomSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C92C695B0412BB106558BD79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZoomSDK/Pods-ZoomSDK-frameworks.sh",
+				"${PODS_ROOT}/ZoomAuthenticationHybrid/ZoomAuthentication-ios-7.0.12/ZoomAuthenticationHybrid.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZoomAuthenticationHybrid.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZoomSDK/Pods-ZoomSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B97F18522577DBE0029F202 /* Sources */ = {
@@ -280,16 +371,18 @@
 		};
 		0B97F19C22577DC00029F202 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 269BB1F07EA1A31220B297F6 /* Pods-ZoomSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9B6M85MQ7J;
 				INFOPLIST_FILE = ZoomSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Serg.ZoomSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = SergP.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,16 +391,18 @@
 		};
 		0B97F19D22577DC00029F202 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A7F84DB65A8604BF8219B5 /* Pods-ZoomSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9B6M85MQ7J;
 				INFOPLIST_FILE = ZoomSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Serg.ZoomSDK;
+				PRODUCT_BUNDLE_IDENTIFIER = SergP.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
