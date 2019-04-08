@@ -24,29 +24,11 @@
                                     <action selector="didTapScanButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KcJ-Cv-JmM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zsg-B7-igF">
-                                <rect key="frame" x="137.5" y="373.5" width="100" height="30"/>
-                                <state key="normal" title="Authentication"/>
-                                <connections>
-                                    <action selector="didTapAuthentication:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ww-pl-Tra"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DU0-ca-hgb">
-                                <rect key="frame" x="147" y="263.5" width="81" height="30"/>
-                                <state key="normal" title="Delete User"/>
-                                <connections>
-                                    <action selector="didTapDeleteUыer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NV6-0S-Zrv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DU0-ca-hgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0CQ-hU-nHP"/>
-                            <constraint firstItem="Zsg-B7-igF" firstAttribute="top" secondItem="nFR-JW-XoT" secondAttribute="bottom" constant="25" id="AYf-iU-j5G"/>
                             <constraint firstItem="nFR-JW-XoT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="O8A-v1-k4o"/>
                             <constraint firstItem="nFR-JW-XoT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wup-jA-QAN"/>
-                            <constraint firstItem="nFR-JW-XoT" firstAttribute="top" secondItem="DU0-ca-hgb" secondAttribute="bottom" constant="25" id="YVV-dM-hv2"/>
-                            <constraint firstItem="Zsg-B7-igF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sw9-Zf-UO3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
