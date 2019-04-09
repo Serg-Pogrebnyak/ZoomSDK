@@ -8,7 +8,6 @@
 
 import UIKit
 import ZoomAuthenticationHybrid
-import LocalAuthentication
 
 class ViewController: UIViewController, ZoomVerificationDelegate, URLSessionDelegate {
 
